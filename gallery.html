@@ -1,46 +1,194 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>
+        Gallery
+    </title>
     <style>
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        h1,
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
         }
-    
+
         li {
             float: left;
         }
-    
+
         li a {
             display: block;
             padding: 8px;
             background-color: #dddddd;
         }
-        </style>
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <div class="box">
+            <img src="assets/pictures/Kani.jpg">
+        </div>
+        <div class="box">
+            <img src="assets/pictures/Kissa.jpg">
+        </div>
+        <div class="box">
+            <img src="assets/pictures/Siili.jpg">
+        </div>
+        <div class="box">
+            <img src="assets/pictures/Possu.jpg">
+        </div>
+        <div class="box">
+            <img src="assets/pictures/orava.jpg">
+            </div>
+    </div>
 
-    <h1 style="color:mediumblue">Gallery</h1>   
-        <p>This gallery is made to showcase Finnish IT-Ankka comics </p>
-    
+    <h1 style="color:mediumblue">Gallery</h1>
+    <p>This gallery is to make you relax while watching small and cute animals </p>
 
-    <h2>Java-Ankka is a classic</h2>
-        <img src="assets/pictures/Java-Ankka.png" alt="Java-Ankka a.k.a Java-duck" style="width:500px;height:600px";>
-    
-        
-    <h2>When nothing builds</h2>
-    <img src="assets/pictures/EiBuildaa.png" alt="When nothing builds" style="width:500px;height:600px";>
 
-    
-    <h2>Quick debuggin session</h2>
-        <img src="assets/pictures/NopeaDebuggaus.png" alt="Quick debuggin session" style="width:500px;height:600px";>
-    
-        <h2>Investments</h2>
-        <img src="assets/pictures/Rahan takii.jpg" alt="For the money" style="width:500px;height:600px";>
-        
-    <h2>Testi</h2>
+    <h2>Small cat</h2>
+    <img src="assets/pictures/Kissa.jpg" alt="Small cat" style="width:150px;height:150px" ;>
+
+
+    <h2>Cute bunny</h2>
+    <img src="assets/pictures/Kani.jpg" alt="Cute bunny" style="width:150px;height:150px" ;>
+
+
+    <h2>Innocent hedgehog</h2>
+    <img src="assets/pictures/Siili.jpg" alt="Innocent hedgehog" style="width:150px;height:150px" ;>
+
+    <h2>Tiny piglet</h2>
+    <img src="assets/pictures/Possu.jpg" alt="Tiny piglet" style="width:150px;height:150px" ;>'
+    '
+    <h2>Mini squirrel</h2>
+    <img src="assets/pictures/orava.jpg" alt="Mini squirrel" style="width:150px;height:150px" ;>
+
+
 
     <ul>
         <li><a href="./Omasivusto.html">Home</a></li>
@@ -52,4 +200,5 @@
 
     </ul>
 </body>
+
 </html>
