@@ -2,33 +2,39 @@
 <html lang="fi">
 
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/main.js"></script>
+
     <title>
         Portfolio
     </title>
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            padding: 8px;
-            background-color: #dddddd;
-        }
     </style>
 </head>
 
 <body>
 
-    <h1 style="color:mediumblue">About me</h1>
-    <p></p>
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" id="light" name="theme" checked>
+
+            <label for="dark" class="visually-hidden">Dark</label>
+            <input type="radio" id="dark" name="theme">
+
+            <label for="green" class="visually-hidden">Green</label>
+            <input type="radio" id="green" name="theme">
+
+            <label for="pink" class="visually-hidden">Pink</label>
+            <input type="radio" id="pink" name="theme">
+        </fieldset>
+    </form>
+
+    <h1 style="color:mediumblue">Portfolio</h1>
+    <p>This page is designed to show my work and how it was made.</p>
     <p></p>
 
     <h2></h2>

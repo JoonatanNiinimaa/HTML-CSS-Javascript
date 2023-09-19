@@ -2,49 +2,76 @@
 <html lang="fi">
 
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/main.js"></script>
     <title>
         Survey Page
     </title>
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            padding: 8px;
-            background-color: #dddddd;
-        }
     </style>
 </head>
 
 <body>
 
-    <h1 style="color:mediumblue">Survey page</h1>
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" id="light" name="theme" checked>
+
+            <label for="dark" class="visually-hidden">Dark</label>
+            <input type="radio" id="dark" name="theme">
+
+            <label for="green" class="visually-hidden">Green</label>
+            <input type="radio" id="green" name="theme">
+
+            <label for="pink" class="visually-hidden">Pink</label>
+            <input type="radio" id="pink" name="theme">
+        </fieldset>
+    </form>
+
+    <h1>Survey page</h1>
     <p>I have a very important survey for you</p>
     <p>What is the best pizza topping?</p>
     <p>If you favourite topping is not on the list submit your own</p>
-    <form>
-          <input type="radio" id="Pepperone" name="pizza" value="Pepperone">
-          <label for="Pepperone">Pepperone</label><br>
-          <input type="radio" id="Mushroom" name="pizza" value="Mushroom">
-          <label for="Mushroom">Mushroom</label><br>
-          <input type="radio" id="Chicken" name="pizza" value="Chicken">
-          <label for="Chicken">Chicken</label><br>
-          <input type="radio" id="Pineapple" name="pizza" value="Pineapple">
-          <label for="Pineapple">Pineapple</label><br>
-         <textarea id="kysely" name="customPizza" rows="4" cols="40"></textarea>
-         <label for="kysely"></label><br>
-          <input type="submit" value="Submit">
-    </form>
 
+    <form>
+    <div class="grid-container">
+        <div class="item1">
+             <input type="radio" id="Pepperone" name="pizza" value="Pepperone">
+              <label for="Pepperone">Pepperone</label><br>
+        </div>
+        <div class="item2">
+              <input type="radio" id="Mushroom" name="pizza" value="Mushroom">
+              <label for="Mushroom">Mushroom</label><br>
+        </div>
+        <div class="item3">
+              <input type="radio" id="Chicken" name="pizza" value="Chicken">
+              <label for="Chicken">Chicken</label><br>
+        </div>  
+        <div class="item4">
+              <input type="radio" id="Pineapple" name="pizza" value="Pineapple">
+              <label for="Pineapple">Pineapple</label><br>
+        </div> 
+        <div class="item5">    
+          <input type="radio" id="Mozzarella" name="pizza" value="Mozzarella">
+          <label for="Mozzarella">Mozzarella</label><br>
+        </div>
+        <div class="item6">        
+          <input type="radio" id="Bacon" name="pizza" value="Bacon">
+          <label for="Bacon">Bacon</label><br>
+        </div>
+        <div class="item7">
+             <textarea id="kysely" name="customPizza" rows=4 cols=63></textarea>
+             <label for="kysely"></label><br>
+      </div>
+      <div class="item8">
+        <input type="submit" class="button" value="Submit">
+      </div>
+      </div>
+    </form>
 
     <h2>Testi</h2>
     <ul>

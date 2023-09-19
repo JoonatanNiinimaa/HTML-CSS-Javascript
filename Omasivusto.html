@@ -2,51 +2,46 @@
 <html lang="fi">
 
 <head>
-
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/main.js"></script>
     <title>
         Home Page
     </title>
 
     <style>
-        body{
-            background-color: lightblue;
-        }
-        h1, h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            padding: 8px;
-            background-color: #dddddd;
-        }
     </style>
 </head>
 
 <body>
 
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" id="light" name="theme" checked>
+
+            <label for="dark" class="visually-hidden">Dark</label>
+            <input type="radio" id="dark" name="theme">
+
+            <label for="green" class="visually-hidden">Green</label>
+            <input type="radio" id="green" name="theme">
+
+            <label for="pink" class="visually-hidden">Pink</label>
+            <input type="radio" id="pink" name="theme">
+        </fieldset>
+    </form>
+
     <h1 style="color:mediumblue">Oma sivuni</h1>
-    
+
 
     <h2>Harrastukset</h2>
     <ol>Pyöräily</ol>
     <ol>Keilailu</ol>
     <ol>Elokuvat</ol>
 
-    
+
     <ul>
         <li><a href="./Omasivusto.html">Home</a></li>
         <li><a href="./about.html">About</a></li>

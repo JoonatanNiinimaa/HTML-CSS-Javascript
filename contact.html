@@ -2,36 +2,36 @@
 <html lang="fi">
 
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/main.js"></script>
     <title>
         Contact
     </title>
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            padding: 8px;
-            background-color: #dddddd;
-        }
-        table, th, td {
-            border: 3px solid black;
-            border-collapse: collapse;
-            width: 350px; height: 20px;
-        }
     </style>
 </head>
 
 <body>
 
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" id="light" name="theme" checked>
+
+            <label for="dark" class="visually-hidden">Dark</label>
+            <input type="radio" id="dark" name="theme">
+
+            <label for="green" class="visually-hidden">Green</label>
+            <input type="radio" id="green" name="theme">
+
+            <label for="pink" class="visually-hidden">Pink</label>
+            <input type="radio" id="pink" name="theme">
+        </fieldset>
+    </form>
+    
     <h1 style="color:mediumblue">Contact information</h1>
     <p>If you have any messages towards me you can try the following to reach me:</p>
 
@@ -39,9 +39,6 @@
         <tr>
             <th>E-mail</th>
             <th>Joona-ni@outlook.com</th>
-        <tr>
-            <th>Phone number</th>
-            <th>+358 45 2738058</th>
         <tr>
             <th>Linked In</th>
             <th><a href="https://www.linkedin.com/in/joonatan-niinimaa-614793256/">My LinkedIn profile</a></th>
