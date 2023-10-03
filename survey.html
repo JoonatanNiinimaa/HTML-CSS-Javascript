@@ -48,49 +48,54 @@
         </fieldset>
     </form>
 
-    <h1>Survey page</h1>
-    <p>I have a very important survey for you</p>
-    <p>What is the best pizza topping?</p>
-    <p>If you favourite topping is not on the list submit your own</p>
-
-    <form>
-    <div class="grid-container">
-        <div class="item1">
-             <input type="radio" id="Pepperone" name="pizza" value="Pepperone">
-              <label for="Pepperone">Pepperone</label><br>
+    <div class="text-section">
+        <section>
+            <h1>Survey page</h1>
+            <p>I have a very important survey for you</p>
+            <p>What is the best pizza topping?</p>
+            <p>If you favourite topping is not on the list submit your own</p>
+        </section>
+    </div>
+    <form id="pizzaForm">
+        <div class="grid-container">
+            <div class="item1">
+                 <input type="radio" id="Pepperone" name="pizza" value="Pepperone">
+                  <label for="Pepperone">Pepperone</label><br>
+            </div>
+            <div class="item2">
+                  <input type="radio" id="Mushroom" name="pizza" value="Mushroom">
+                  <label for="Mushroom">Mushroom</label><br>
+            </div>
+            <div class="item3">
+                  <input type="radio" id="Chicken" name="pizza" value="Chicken">
+                  <label for="Chicken">Chicken</label><br>
+            </div>
+            <div class="item4">
+                  <input type="radio" id="Pineapple" name="pizza" value="Pineapple">
+                  <label for="Pineapple">Pineapple</label><br>
+            </div>
+            <div class="item5">
+                  <input type="radio" id="Mozzarella" name="pizza" value="Mozzarella">
+                  <label for="Mozzarella">Mozzarella</label><br>
+            </div>
+            <div class="item6">
+                  <input type="radio" id="Bacon" name="pizza" value="Bacon">
+                  <label for="Bacon">Bacon</label><br>
+            </div>
+            <div class="item7">
+                 <textarea id="kysely" name="customPizza" rows=4 cols=63></textarea>
+                 <label for="kysely"></label><br>
+            </div>
+            <div class="item8">
+                  <input type="submit" class="button" value="Submit">
+            </div>
         </div>
-        <div class="item2">
-              <input type="radio" id="Mushroom" name="pizza" value="Mushroom">
-              <label for="Mushroom">Mushroom</label><br>
-        </div>
-        <div class="item3">
-              <input type="radio" id="Chicken" name="pizza" value="Chicken">
-              <label for="Chicken">Chicken</label><br>
-        </div>  
-        <div class="item4">
-              <input type="radio" id="Pineapple" name="pizza" value="Pineapple">
-              <label for="Pineapple">Pineapple</label><br>
-        </div> 
-        <div class="item5">    
-          <input type="radio" id="Mozzarella" name="pizza" value="Mozzarella">
-          <label for="Mozzarella">Mozzarella</label><br>
-        </div>
-        <div class="item6">        
-          <input type="radio" id="Bacon" name="pizza" value="Bacon">
-          <label for="Bacon">Bacon</label><br>
-        </div>
-        <div class="item7">
-             <textarea id="kysely" name="customPizza" rows=4 cols=63></textarea>
-             <label for="kysely"></label><br>
-      </div>
-      <div class="item8">
-        <input type="submit" class="button" value="Submit">
-      </div>
-      </div>
     </form>
 
-
-    <h2>Testi</h2>
+    <div id="answerList">
+        <h2>Answers:</h2>
+        <ul id="answers"></ul>
+    </div>
 
 </body>
 
