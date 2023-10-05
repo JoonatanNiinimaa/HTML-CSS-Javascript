@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="./Omasivusto.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./porfolio.html">Portfolio</a></li>
+                    <li><a href="./cv.html">CV</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./survey.html">Survey</a></li>
@@ -51,26 +51,63 @@
     <div class="text-section">
         <section>
             <h1>Welcome to the home page</h1>
-            <p>This webpage is made for school course</p>
+            <p>I have no idea what to put here, so I just list some things I found from the internet.</p>
         </section>
     </div>
 
-    <div>
-        <aside class="aside-on-right">
-            <h2>This box will give you an alert</h2>
-            <p>You may click it</p>
-            <button class="alertButton" onclick="alertBox()">Click me</button>
-        </aside>
+    <div class="section-container">
+        <div class="left-section">
+            <div class="text-section">
+                <section>
+                    <h2>Boxes</h2>
+                    <p>These boxes will do different things when you click/hover on them</p>
+                </section>
+            </div>
+
+            <div class="boxes">
+                <div class="square" id="spinSquare">
+                    <aside>
+                        <button id="spinButton" class="clickableButton">Spin box</button>
+                    </aside>
+                </div>
+
+                <div class="square">
+                    <aside>
+                        <button id="alertButton" class="clickableButton" onclick="alertBox()">Alert box</button>
+                    </aside>
+                </div>
+                <div class="square">
+                    <aside>
+                        <button class="clickableButton ghost">Ghost box</button>
+                    </aside>
+                </div>
+                <div class="square">
+                    <aside>
+                        <button class="clickableButton rainbow">Rainbow box</button>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="video">
+                <aside>
+                    <video class="hidden-video" preload="auto" width="320" height="240">
+                        <source src="assets/video/RickAstley.mp4">
+                    </video>
+                </aside>
+            </div>
+        </div>
     </div>
 
-    <div class="video">
-        <aside>
-            <video class="hidden-video" preload="auto" width="320" height="240">
-                <source src="assets/video/RickAstley.mp4">
-            </video>
-        </aside>
+    <div class="section-container">
+        <div class="left-section">
+        <h2> Timer </h2>
+        <p> Here is a clock made with javascript using timer. It'll start after pressing a button.</p>
+        <button id="timer" class="clickableButton">Start timer</button>
+        <div id="clock" class="clock"></div>
+        </div>
     </div>
-
+    
 
 </body>
 

@@ -76,3 +76,39 @@ function displayAnswers() {
 function resetForm() {
   document.getElementById("pizzaForm").reset();
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+const spinSquare = document.getElementById("spinSquare");
+const spinButton = document.getElementById("spinButton");
+
+spinButton.addEventListener("click", function () {
+  // Toggle the 'spin-animation' class on the square
+  spinSquare.classList.toggle("spin-animation");
+});
+});
+
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    // Assuming you have a div with id "pdfContainer" to display the PDF
+    const cvButton = document.getElementById("pdfContainer");
+    cvButton.innerHTML = '<object data="assets/files/Joonatan_Niinimaa.pdf" type="application/pdf" width="100%" height="100%""></object>';
+  }
+  xhttp.open("GET", "assets/files/Joonatan_Niinimaa.pdf");
+  xhttp.responseType = "blob"; // Set responseType to "blob" for binary data (PDF)
+  xhttp.send();
+}
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+
+
+// JavaScript to change the color of the clock when the button is pressed
+document.getElementById("timer").addEventListener("click", function() {
+  const clock = document.getElementById("clock");
+  clock.style.color = "black"; // Change the color to blue
+});
+}

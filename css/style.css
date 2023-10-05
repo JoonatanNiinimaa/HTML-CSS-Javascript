@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*Under this comment the lines are for the color picker that every page has*/
 :root {
     --clr-body-bg: hsl(198, 60%, 60%);
     --clr-card-bg: hsl(1, 20%, 50%);
@@ -110,6 +111,7 @@
     --clr-heading: rgb(226, 94, 62);
 }
 
+/* Just this .container is for fisr set of gallery pictures*/
 .container {
     width: 150px;
     height: 150xp;
@@ -120,6 +122,7 @@
     justify-content: center;
 }
 
+/* From .container2 to .li a:hover are here for the navigation bar */
 .container2 {
     width: 80%;
     margin: 0 auto;
@@ -172,6 +175,7 @@ li a:hover {
     color: blue;
 }
 
+/* .video to .video:hover are self-explanatory */
 .video {
     float: right;
 }
@@ -187,7 +191,7 @@ li a:hover {
     opacity: 1;
 }
 
-
+/* .box and .animal are for the gallery pictures for how they behave*/
 .box {
     width: 150px;
     margin: 0 10px;
@@ -206,7 +210,7 @@ li a:hover {
     border-radius: 5px;
 }
 
-.content {
+/* .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -215,6 +219,7 @@ li a:hover {
     font-family: Verdana;
     text-align: center;
 }
+No idea what this affects, but too scared to remove */
 
 .box:hover .animal {
     transform: scale(1.3);
@@ -223,68 +228,169 @@ li a:hover {
     filter: blur(0);
 }
 
-.alertButton {
+.boxes,
+video {
+    display: flex;
+}
+
+/* These lines are for the main page buttons */
+.clickableButton {
     background-color: orange;
     color: black;
     border: none;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
 }
+.square {
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    transition: transform 0.5s;
+}
 
+.spin-animation {
+    transform: rotate(360deg);
+}
+.ghost {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ghost:hover {
+    opacity: 0;
+}
+
+@keyframes rainbow {
+    0% {
+        background: orange;
+    }
+
+    14% {
+        background: #ff8000;
+    }
+
+    28% {
+        background: #ffff00;
+    }
+
+    42% {
+        background: #80ff00;
+    }
+
+    57% {
+        background: #00ff80;
+    }
+
+    65% {
+        background: #0080ff;
+    }
+
+    78% {
+        background: #8000ff;
+    }
+
+    83% {
+        background: #ff0080;
+    }
+
+    90% {
+        background: #ff0000;
+    }
+
+    95% {
+        background: #ff4500;
+    }
+
+    100% {
+        background: orange;
+    }
+}
+
+.rainbow:hover {
+    animation: rainbow 4s linear infinite;
+}
+
+/* CSS to style the clock element */
+.clock {
+    color: var(--clr-body-bg); /* Default color is red */
+  }
+  
+/* Some formatting and style for the text */
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--clr-body-bg);
 }
+h1, h2 {
+    color: var(--clr-heading);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: var(--clr-text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .text-section {
     margin-bottom: 50px;
 }
 
 .section-container {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-  }
-  
+}
+
 .left-section {
     flex-grow: 1;
-   padding: 10px;
-    background-color: --var(clr-body-bg);; 
-  }
-  
+    padding: 10px;
+    background-color: --var(clr-body-bg);
+    ;
+}
+
 .right-aside {
-    flex-basis: 30%; 
-    padding: 10px; 
+    flex-basis: 30%;
+    padding: 10px;
     background-color: var(--clr-body-bg);
-  }
+}
+/* These lines define the second set of pictures in the gallery page*/
 .scroller-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .scroller {
     max-width: max-content;
-   
 }
+
 .scroller__inner {
     padding-block: 1 rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem
-    
 }
+
 .scroller[data-animated="true"] {
     overflow: hidden;
-    -webkit-mask: linear-gradient(
-        90deg,
-        transparent,
-        white 20%,
-        white 80%,
-        transparent
-        );
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
+
 .scroller[data-animated="true"] .scroller__inner {
     animation: scroll 48s linear infinite;
     flex-wrap: nowrap;
@@ -292,11 +398,11 @@ body {
 }
 
 @keyframes scroll {
-    to{
+    to {
         transform: translate(calc(-50% - 0.5rem));
     }
 }
-
+/* These lines are here to make the grid on the survey page*/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -333,22 +439,30 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
-
-h1,
-h2 {
-    color: var(--clr-heading);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* These lines are for the CV page */
+.cvButton-container {
+    display: flex;
 }
 
-p {
-    color: var(--clr-text);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.cv-container {
+    margin-top: 10px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.cvButton {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.pdf-container {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
 }
 
