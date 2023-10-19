@@ -56,7 +56,6 @@ document.getElementById("pizzaForm").addEventListener("submit", function (event)
   const newAnswer = new Answer(selectedPizza, customPizzaText);
   answerList.push(newAnswer);
 
-  // Display the answers
   displayAnswers();
   resetForm();
 });
@@ -83,7 +82,6 @@ const spinSquare = document.getElementById("spinSquare");
 const spinButton = document.getElementById("spinButton");
 
 spinButton.addEventListener("click", function () {
-  // Toggle the 'spin-animation' class on the square
   spinSquare.classList.toggle("spin-animation");
 });
 });
@@ -91,24 +89,54 @@ spinButton.addEventListener("click", function () {
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    // Assuming you have a div with id "pdfContainer" to display the PDF
     const cvButton = document.getElementById("pdfContainer");
     cvButton.innerHTML = '<object data="assets/files/Joonatan_Niinimaa.pdf" type="application/pdf" width="100%" height="100%""></object>';
   }
   xhttp.open("GET", "assets/files/Joonatan_Niinimaa.pdf");
-  xhttp.responseType = "blob"; // Set responseType to "blob" for binary data (PDF)
+  xhttp.responseType = "blob"; 
   xhttp.send();
 }
+function myTimer() {
+  try {
+    const d = new Date();
+    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+
+    document.getElementById("timer").addEventListener("click", function() {
+      const clock = document.getElementById("clock");
+      clock.style.color = "black";
+    });
+  } catch (error) {
+    // Handle the error here, for example, log it to the console
+    console.error("An error occurred:", error);
+  }
+}
+
+// Set up the timer with error handling
 setInterval(myTimer, 1000);
 
-function myTimer() {
-  const d = new Date();
-  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
 
+document.addEventListener('DOMContentLoaded', function () {
 
-// JavaScript to change the color of the clock when the button is pressed
-document.getElementById("timer").addEventListener("click", function() {
-  const clock = document.getElementById("clock");
-  clock.style.color = "black"; // Change the color to blue
-});
+const numberList = document.getElementById("numberList");
+
+let currentNumber = 1;
+
+function displayNumber() {
+    numberList.innerHTML = "";
+
+    const listItem = document.createElement("li");
+    listItem.textContent = currentNumber;
+    numberList.appendChild(listItem);
+
+    currentNumber++;
+
+    if (currentNumber > 5) {
+        currentNumber = 1; 
+    }
 }
+
+displayNumber(); 
+setInterval(displayNumber, 1000);
+
+
+});
