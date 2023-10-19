@@ -1,9 +1,9 @@
-##Tämä readme tiedosto käy läpi webkurssin pisteytyksen
+# Tämä readme tiedosto käy läpi webkurssin pisteytyksen
 
 Vaatimuslista.
 https://jukkapne.github.io/WebOhjelmoinninPerusteet/
 
-#HTML (25%)
+# HTML (25%)
 
 1/5: Joka sivulla on perusteita käytetty
 2/5: Joka sivulla on erilaiset sisällöt merkitty.
@@ -13,7 +13,7 @@ https://jukkapne.github.io/WebOhjelmoinninPerusteet/
 4/5: Table esimerkki löytyy kotisivulta.
 5/5: Semaattisia elementtejä olen käyttänyt erottamaan erilaisia asioita, kuten header, section, aside, jotta kaikki olisi mahdollisimman helposti erotettavissa toisistaan.
 
-#CSS (25%)
+# CSS (25%)
 
 1/5: Kaikille sivuille ollaan CSS:n kautta asetettu fontit ja värit.
 
@@ -25,7 +25,7 @@ https://jukkapne.github.io/WebOhjelmoinninPerusteet/
 
 5/5: ¯\_(ツ)_/¯
 
-#JavaScript (25%)
+# JavaScript (25%)
 
 1/5: Kotisivulla on laatikko alertti varten.
 

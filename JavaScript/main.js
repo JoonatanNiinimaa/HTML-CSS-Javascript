@@ -106,19 +106,14 @@ function myTimer() {
       clock.style.color = "black";
     });
   } catch (error) {
-    // Handle the error here, for example, log it to the console
     console.error("An error occurred:", error);
   }
 }
-
-// Set up the timer with error handling
 setInterval(myTimer, 1000);
-
 
 document.addEventListener('DOMContentLoaded', function () {
 
 const numberList = document.getElementById("numberList");
-
 let currentNumber = 1;
 
 function displayNumber() {
