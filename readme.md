@@ -6,11 +6,13 @@ https://jukkapne.github.io/WebOhjelmoinninPerusteet/
 # HTML (25%)
 
 1/5: Joka sivulla on perusteita käytetty
+
 2/5: Joka sivulla on erilaiset sisällöt merkitty.
 
 3/5: Forms:ia on käytetty Survey pagen kanssa, linkkejä on minimissään, joka sivulla navigaatio palkilla ja mediaa kuten mp4 löytyy Home pagelta (kylläkin piilossa aluksi).
 
 4/5: Table esimerkki löytyy kotisivulta.
+
 5/5: Semaattisia elementtejä olen käyttänyt erottamaan erilaisia asioita, kuten header, section, aside, jotta kaikki olisi mahdollisimman helposti erotettavissa toisistaan.
 
 # CSS (25%)
